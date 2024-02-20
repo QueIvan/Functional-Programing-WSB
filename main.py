@@ -1,8 +1,8 @@
-
-def print_hi(name):
-    print(f'Hi, {name}')
-
+from zestawOne import builtInFunctions
+from zestawTwo import addTwoNumbers, equal5
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    builtInFunctions()
+    print(addTwoNumbers(5, 6))
+    equal5(6)
 
