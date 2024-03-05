@@ -1,5 +1,5 @@
-from zestawOne import builtInFunctions
-from zestawTwo import add_two_numbers, equal5
+from firstLab.zestawOne import builtInFunctions
+from firstLab.zestawTwo import add_two_numbers, equal5
 
 if __name__ == '__main__':
     builtInFunctions()
