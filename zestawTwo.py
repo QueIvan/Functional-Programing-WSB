@@ -1,6 +1,9 @@
-def equal5(content):
-    print("Czy podana wartość jest równa 5: ", content == 5)
+def make_multiplier(y):
+    def multiplier(x):
+        return x * y
+    return multiplier
 
 
-def add_two_numbers(a, b):
-    return a+b
+if __name__ == '__main__':
+    double = make_multiplier(5)
+    print(double(2))

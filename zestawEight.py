@@ -1,6 +1,6 @@
+from functools import reduce
+
 if __name__ == '__main__':
-    square = [x*x for x in range(1, 11)]
-    words = [len(x) for x in ["test", "port", "tor", "lesser"]]
-    print(square)
-    print(words)
+    values = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print(reduce(lambda x, y: x+y, values))
 

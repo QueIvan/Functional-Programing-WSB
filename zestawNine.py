@@ -1,5 +1,2 @@
-from functools import reduce
-
 if __name__ == '__main__':
-    data = [1, 2, 3, 32, 5, 6]
-    print(reduce(lambda a, b: a if a > b else b, data))
+    print([2**x for x in range(1, 11)])

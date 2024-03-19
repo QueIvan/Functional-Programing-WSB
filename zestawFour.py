@@ -1,10 +1,20 @@
-def function_a(other_one):
-    print("Czasami trzeba zrobic ", other_one)
+import time
 
 
-def function_b(value):
-    return f"coś {value}"
+def timeit(method):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = method(*args, **kwargs)
+        end = time.time()
+        print(f"Funkcja {method.__name__} wykonanała się w {end - start} sekund.")
+
+    return wrapper
+
+
+@timeit
+def dummy_func():
+    time.sleep(1)
 
 
 if __name__ == '__main__':
-    function_a(function_b("szalonego"))
+    dummy_func()

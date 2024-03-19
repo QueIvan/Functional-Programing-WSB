@@ -1,18 +1,6 @@
-SETUP_INDEX = 0
-
-
-def moveIndexBy(value):
-    global SETUP_INDEX
-    SETUP_INDEX += value
-
-
-def innerScopeIndex():
-    SETUP_INDEX = 12
-    print(SETUP_INDEX)
+def filter_even_numbers(numbers):
+    return list(filter(lambda number: number % 2 == 0, numbers))
 
 
 if __name__ == '__main__':
-    moveIndexBy(3)
-    print(SETUP_INDEX)
-    innerScopeIndex()
-    print(SETUP_INDEX)
+    print(filter_even_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
